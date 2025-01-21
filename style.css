@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --text-dark: #black;
+    --text-light: #767268;
+    --extra-light: #eef9f8;
+    --white: #white;
+    --max-width: 1200px;
+    --header-font: "Merriweather", serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.section_container{
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 5rem 1rem;
+}
+
+.section_header{
+    position: relative;
+    isolation: isolate;
+    width: fit-content;
+    margin-inline: auto;
+    padding-bottom: .5rem;
+    font-size: 2.5rem;
+    font-weight: 800;
+    font-family: var(--header-font);
+    color: var(--text-dark);
+    text-align: center;
+}
+
+.section_header::before{
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 3rem;
+    background-color: var(--text-dark);
+}
+
+.btn{
+    padding: 1rem 2rem;
+    outline: none;
+    border: none;
+    color: var(--white);
+    background-color: var(--text-dark);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: var(--text-light);
+}
+
+img{
+    display: flex;
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+ul{
+    list-style: none;
+}
+
+html, body{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+nav{
+    position: fixed;
+    isolation: isolate;
+    width: 100%;
+    z-index: 9;
+}
