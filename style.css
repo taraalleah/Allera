@@ -86,3 +86,22 @@ nav{
     width: 100%;
     z-index: 9;
 }
+
+.nav_header{
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--extra-light);
+}
+
+.nav_logo img{
+    max-width: 125px;
+}
+
+.nav_menu_btn{
+    font-size: 1.5rem;
+    color: var(--text-dark);
+    cursor: pointer;
+}
