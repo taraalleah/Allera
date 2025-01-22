@@ -105,3 +105,28 @@ nav{
     color: var(--text-dark);
     cursor: pointer;
 }
+
+.nav_links{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    background-color: var(--extra-light);
+    transition: transform 0.5s;
+    z-index: -1;
+}
+
+.nav_links.open{
+    transform: translateY(100%);
+}
+
+.nav_links a{
+    font-weight: 500;
+    color: var(--text-light);
+}
