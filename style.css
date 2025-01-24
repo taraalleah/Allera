@@ -130,3 +130,37 @@ nav{
     font-weight: 500;
     color: var(--text-light);
 }
+
+@media (width > 768px) {
+    nav{
+        position: absolute;
+        padding: 1rem 2 rem;
+        max-width: var(--max-width);
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+
+    .nav_header {
+        flex: 1;
+        padding: 0;
+        background-color: transparent;
+    }
+
+    .nav_menu_btn {
+        display: none;
+    }
+
+    .nav_links {
+        position: static;
+        padding: 0;
+        width: fit-content;
+        flex-direction: row;
+        background-color: transparent;
+        transform: none !important;
+    }
+}
