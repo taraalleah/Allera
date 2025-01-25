@@ -131,6 +131,7 @@ nav{
     color: var(--text-light);
 }
 
+/*Responsiveness*/
 @media (width > 768px) {
     nav{
         position: absolute;
@@ -162,5 +163,9 @@ nav{
         flex-direction: row;
         background-color: transparent;
         transform: none !important;
+    }
+
+    .nav_links a:hover {
+        color: var(--text-dark);
     }
 }
