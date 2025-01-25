@@ -48,8 +48,8 @@
     padding: 1rem 2rem;
     outline: none;
     border: none;
-    color: var(--white);
-    background-color: var(--text-dark);
+    color: white;
+    background-color: black;
     transition: 0.3s;
     cursor: pointer;
 }
@@ -129,6 +129,37 @@ nav{
 .nav_links a{
     font-weight: 500;
     color: var(--text-light);
+}
+
+.header_container {
+    display: grid;
+    padding-block: 0;
+    overflow: hidden;
+}
+
+.header_content {
+    padding-block: 0 5rem;
+}
+
+.header_content h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    font-family: var(--header-font);
+    color: var(--text-dark);
+    text-align: center;
+}
+
+.header_content h2 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: var(--header-font);
+    color: var(--text-dark);
+    text-align: center;
+}
+
+.header_btn {
+    text-align: center;
 }
 
 /*Responsiveness*/
