@@ -164,6 +164,33 @@ nav{
     text-align: center;
 }
 
+.about_container {
+    display: grid;
+    gap: 2rem;
+    overflow: hidden;
+}
+
+.about_image img {
+    max-width: 500px;
+    margin-inline: auto;
+}
+
+.about_content .section_header {
+    margin-bottom: 4rem;
+}
+
+.about_content p {
+    margin-bottom: 2rem;
+    color: var(--text-light);
+    line-height: 1.75rem;
+    text-align: center;
+}
+
+.about_btn {
+    margin-top: 4rem;
+    text-align: center;
+}
+
 /*Responsiveness*/
 
 @media (width > 540px){
