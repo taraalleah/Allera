@@ -43,3 +43,7 @@ ScrollReveal().reveal(".header_btn",{
     ...scrollRevealOption,
     delay: 1500,
 });
+
+ScrollReveal().reveal(".contact_image img",{
+    ...scrollRevealOption,
+});
