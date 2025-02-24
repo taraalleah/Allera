@@ -1,6 +1,6 @@
 const menuBtn = document.getElementById("menu-btn");
 const navLinks = document.getElementById("nav-links");
-const menuBtnIcon = document.getElementById("i");
+const menuBtnIcon = menuBtn.querySelector("i");
 
 //Not sure what I did wrong to not show the X mark when the menu is toggled
 menuBtn.addEventListener("click", (e) => {
@@ -9,13 +9,13 @@ menuBtn.addEventListener("click", (e) => {
     const isOpen = navLinks.classList.contains("open");
     menuBtnIcon.setAttribute(
         "class",
-        isOpen ? "ri-close-line" : "ri-menu-3-line"
+        isOpen ? "ri-close-fill" : "ri-menu-fill"
     );
 });
 
 navLinks.addEventListener("click", (e) => {
     navLinks.classList.remove("open");
-    menuBtn.setAttribute("class", "ri-menu-3-line");
+    menuBtnIcon.setAttribute("class", "ri-menu-fill");
 });
 
 const scrollRevealOption = {
