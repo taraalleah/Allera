@@ -164,10 +164,6 @@ nav{
     text-align: center;
 }
 
-.header_image {
-    margin-right: 2%;
-}
-
 .about_container {
     display: grid;
     gap: 2rem;
