@@ -164,6 +164,10 @@ nav{
     text-align: center;
 }
 
+.header_image {
+    margin-right: 2%;
+}
+
 .about_container {
     display: grid;
     gap: 2rem;
@@ -288,6 +292,8 @@ nav{
 }
 
 /*Responsiveness*/
+
+
 
 @media (width > 540px){
     .header_content h1 {
