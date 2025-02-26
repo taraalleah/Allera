@@ -86,7 +86,6 @@ nav{
     isolation: isolate;
     width: 100%;
     z-index: 9;
-    background-color: white; /*temporary*/
 }
 
 .nav_header{
