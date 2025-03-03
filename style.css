@@ -286,6 +286,10 @@ nav{
     text-align: center;
 }
 
+.book_form{
+    align-items: center; /*does not really do anything ? */
+}
+
 /*Responsiveness*/
 
 
