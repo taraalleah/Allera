@@ -130,6 +130,9 @@ nav{
 .nav_links a{
     font-weight: 500;
     color: var(--text-dark);
+    background: rgba(255, 255, 255, 0.945);
+    border-radius: 15px;
+    padding: 4px 3px;
 }
 
 .header_container {
