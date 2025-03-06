@@ -85,13 +85,15 @@
                 <h2 class="section_header">Let's connect</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer mattis luctus facilisis.
                 </p>
-                <form action="/">
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="09756099-e188-4e4a-b8db-c51e5e8df1f5">
                     <div class="input_row">
-                        <input type="text" placeholder="Your Name">
-                        <input type="text" placeholder="Your Email">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="text" name="email" placeholder="Your Email" required>
                     </div>
-                    <input type="text" placeholder="Your Message">
-                    <button class="btn" type="Submit">SEND</button>
+                    <input type="text" name="message" placeholder="Your Message" required>
+                    <button class="btn" type="submit">SEND</button>
+                    <input type="hidden" name="redirect" value="https://taraalleah.github.io/Allera/#contact">
                 </form>
             </div>
             <div class="contact_image">
