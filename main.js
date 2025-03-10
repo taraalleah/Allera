@@ -2,7 +2,6 @@ const menuBtn = document.getElementById("menu-btn");
 const navLinks = document.getElementById("nav-links");
 const menuBtnIcon = menuBtn.querySelector("i");
 
-//Not sure what I did wrong to not show the X mark when the menu is toggled
 menuBtn.addEventListener("click", (e) => {
     navLinks.classList.toggle("open");
 
