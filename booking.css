@@ -13,7 +13,7 @@
     --light-hover: #edf0f5;
     --light-text: #151426;
 
-    --blue: #0000ff;
+    --blue: #89b1ec;
     --white: #fff;
 
     --shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -161,6 +161,12 @@ nav{
     background: rgba(255, 255, 255, 0.945);
     border-radius: 15px;
     padding: 4px 3px;
+}
+
+.calendar_container {
+    padding: 8rem 5rem;
+    display: grid;
+    gap: 2rem;
 }
 
 .calendar_content {
@@ -418,7 +424,7 @@ nav{
     nav{
         position: absolute;
         padding: 1rem 2 rem;
-        max-width: var(--max-width);
+        max-width: 1200px;
         top: 0;
         left: 50%;
         transform: translateX(-50%);
@@ -448,8 +454,17 @@ nav{
     }
 
     .nav_links a:hover {
-        color: var(--text-light);
+        color: #767268;
     }
+}
+
+@media (width < 768px) {
+
+    .calendar_container {
+        padding: 10rem 5rem;
+        justify-content: center ;
+    }
+
 }
 
 @keyframes to-top {
