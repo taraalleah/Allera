@@ -64,28 +64,27 @@ let curr_year = { value: currDate.getFullYear() };
 
 generateCalendar(curr_month.value, curr_year.value);
 
-// Event handlers for previous and next month
 document.querySelector('#prev-year').onclick = () => {
     if (curr_month.value === 0) {
-        curr_month.value = 11;  // December
-        curr_year.value--;  // Decrease the year
+        curr_month.value = 11;  
+        curr_year.value--;  
     } else {
-        curr_month.value--;  // Go to the previous month
+        curr_month.value--;  
     }
     generateCalendar(curr_month.value, curr_year.value);
 };
 
 document.querySelector('#next-year').onclick = () => {
     if (curr_month.value === 11) {
-        curr_month.value = 0;  // January
-        curr_year.value++;  // Increase the year
+        curr_month.value = 0;  
+        curr_year.value++;  
     } else {
-        curr_month.value++;  // Go to the next month
+        curr_month.value++;  
     }
     generateCalendar(curr_month.value, curr_year.value);
 };
 
-let dark_mode_toggle = document.querySelector('.dark-mode-switch');
+let dark_mode_toggle = document.querySelector('.dark-mode-switch'); //not sure if will keep this darkmode switch 
 dark_mode_toggle.onclick = () => {
     document.querySelector('#form').classList.toggle('light');
     document.querySelector('#form').classList.toggle('dark');
