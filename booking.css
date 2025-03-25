@@ -62,16 +62,6 @@
     text-align: center;
 }
 
-.section_header::before{
-    position: absolute;
-    content: "";
-    bottom: 0;
-    left: 0;
-    height: 2px;
-    width: 3rem;
-    background-color: black;
-}
-
 .btn{
     padding: 1rem 2rem;
     outline: none;
@@ -162,7 +152,7 @@ nav{
     border-radius: 15px;
     padding: 4px 3px;
 }
-
+/* Calendar section 
 .calendar_container {
     padding: 8rem 5rem;
     display: grid;
@@ -178,7 +168,7 @@ nav{
     padding: 20px;
     position: relative;
     overflow: hidden;
-    /* transform: scale(1.25); */
+     transform: scale(1.25); 
 }
 
 .light .calendar {
@@ -229,7 +219,7 @@ nav{
     position: relative;
     cursor: pointer;
     animation: to-top 1s forwards;
-    /* border-radius: 50%; */
+    border-radius: 50%; 
 }
 
 .calendar-days div span {
@@ -418,6 +408,9 @@ nav{
     background-color: var(--color-hover);
 }
 
+*/
+
+
 /*Responsiveness*/
 
 @media (width > 768px) {
@@ -458,14 +451,15 @@ nav{
     }
 }
 
-@media (width < 768px) {
+@media (width < 682px) {
 
     .calendar_container {
-        padding: 10rem 5rem;
+        padding: 5rem;
         justify-content: center ;
     }
 
 }
+
 
 @keyframes to-top {
     0% {
